@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    color: black;
 }
 :root{
     --shadow-gray:#999999;
@@ -13,6 +14,7 @@
         font-size: 5px;
         margin: 0;
         padding: 0;
+        color: black;
     }
     :root{
         --shadow-gray:#999999;
@@ -33,7 +35,21 @@
     100%{
         width: calc(var(--len2)*300);
     }
-} 
+}
+@keyframes aniTitle {
+  from{
+    position: fixed;
+    top: 40%;
+    left :40%;
+    font-size: 12em;
+  }
+  to{
+    position: fixed;
+    top: -2%;
+    left: 2%;
+    font-size: 4em;
+  }
+}
 .header{
     position: absolute;
     display: flex;
@@ -44,10 +60,17 @@
     margin-left: 2%;
     margin-right: 2%;
     border-bottom:solid var(--len2) ;
+
 }
 #title{
     font-family: 'Bungee Shade', cursive;
     font-size: 4em;
+    animation: aniTitle;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    z-index: 2;
+    cursor: pointer;
+    transition-duration: 2s;
 }
 .option{
     font-family: 'Montserrat', sans-serif;
@@ -57,16 +80,18 @@
     display: flex;
     flex-direction: row;
 }
-.option > span{
-    font-size: 2em;
+.option > a{
+    font-size: 1.5em;
     margin-left: calc(var(--len2)*10);
     padding: calc(var(--len2)*6);
     transition-duration: 0.3s;
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
-.option > span:hover{
+.option > a:hover{
     background-color: var(--shadow-gray);
     color:white;
     animation-name: move;
@@ -86,7 +111,7 @@ body{
 .side-bar{
     position: absolute;
     top: 12%;
-    border: solid black 1px;
+    border: olid black 1px;
     height: calc(var(--len2)*500);
     left: 1%;
     width: 12%;
@@ -100,7 +125,8 @@ body{
     width: calc(var(--len2)*70);
     border: solid black 1px;
     border-radius: 20%;
-    margin-bottom: calc(var(--len2)*20);
+    margin-top: calc(var(--len2)*5);
+    margin-bottom: calc(var(--len2)*10);
 }
 .side-bar > div {
     position: relative;
@@ -108,21 +134,22 @@ body{
 }
 .side-bar-text{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(var(--len2)*10);
+    font-size: calc(var(--len2)*7);
 }
 .tag-box{
+
     position: absolute;
     top:12%;
     left: 15%;
-    border-style: solid;
-    border-color: black;               
+    border: solid var(--shadow-gray) 1px;
     border-width: 1px;
-    height: calc(20px * 50);
-    width: 75%; 
+    height: auto;
+    width: 75%;
+    margin-bottom: calc(var(--len2)*200);
     box-shadow: 5px 5px 0px 0px var(--shadow-gray);
 }
 .search{
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -151,8 +178,122 @@ body{
     position: relative;
     cursor: pointer;
 }
+.blog-list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: hidden 1px;
+    width: 100%;
+    height: auto;
+    margin-top: calc(var(--len2)*35);
+}
+a{
+  text-decoration: none;
+}
+.blog-in-list{
+    position: relative;
 
+    display: flex;
+    flex-direction: row;
+    height: calc(var(--len2)*100);
+    width: 90%;
+    margin: 10px;
 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+}
+.blog-in-list:hover{
+    box-shadow: 0px 0px 10px 10px var(--shadow-gray);
+}
+.containts{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.bloger-data{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 45%;
+    padding: 5px;
+}
+#holder-image{
+    height: 100%;
+    width: 20%;
+}
+#blog-title{
+    font-size: 2.5em;
+    padding: 2px;
+    height: 40%;
+    text-align: center;
+    cursor: pointer;
+}
+#blog-title:hover{
+    color: red;
+}
+#blog-prev{
+    text-align: left;
+    padding: calc(var(--len2)*5);
+    font-size: 1.2em;
 
+    height: 30%;
+}
+#blog-tags{
+    text-align: left;
 
-
+    height: 30%;
+    font-size: 1.2em;
+    padding: calc(var(--len2)*5);
+}
+#bloger-pic{
+    height: 60%;
+    width: 100%;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#bloger-pic:hover{
+    transition-duration: 100ms;
+    transform: scale(1.1);
+    border-radius: calc(var(--len2)*10);
+}
+#bloger-id{
+    height: 15%;
+    text-align: center;
+    padding-top: calc(var(--len2)*7);
+    cursor: pointer;
+    bottom: auto;
+}
+#bloger-id:hover{
+    transition-duration: 200ms;
+    color: #F333FF;
+    font-size: 1.5em;
+}
+#bloger-name{
+    height: 15%;
+    bottom: 0;
+    font-size: 1.3em;
+}
+.page-no-block{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+}
+.page-no{
+  border: solid black 1px;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  padding: 5px;
+  margin-top: calc(var(--len2)*15);
+  margin: 10px;
+  font-size: 1.3em;
+}

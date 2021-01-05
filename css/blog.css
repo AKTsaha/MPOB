@@ -1,0 +1,148 @@
+*{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+:root{
+    --shadow-gray:#999999;
+    --len2:2px;
+}
+@media screen and (max-width: 600px){
+    *{
+        font-size: 5px;
+        margin: 0;
+        padding: 0;
+    }
+    :root{
+        --shadow-gray:#999999;
+        --len2:0.7px;
+    }
+  }
+
+.header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 10%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-bottom:solid var(--len2) ;
+
+}
+#title{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 4em;
+}
+.option{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: solid;
+    position: relative;
+    left: calc(var(--len2)*400);
+    display: flex;
+    flex-direction: row;
+}
+.option > a{
+    font-size: 2em;
+    margin-left: calc(var(--len2)*10);
+    padding: calc(var(--len2)*6);
+    transition-duration: 0.3s;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.option > a:hover{
+    background-color: var(--shadow-gray);
+    color:white;
+    animation-name: move;
+}
+body{
+    background-color: white;
+}
+.blog-main{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 1000px;
+}
+#blog-title{
+  position: relative;
+  width: auto;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  align-items:center;
+  font-size: 6em;
+  margin: calc(var(--len2)*10);
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+.social-media-icon-flex{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  height: auto;
+  margin: calc(var(--len2)*10);
+  border: olid black 2px;
+}
+#bloger-pic{
+  border-radius: 50%;
+  transition-duration: 0.2s;
+}
+#bloger-pic:hover{
+  transform: scale(1.2);
+  border-radius: 20%;
+}
+#bloger-name{
+  font-size: 2em;
+}
+#bloger-id{
+  font-size: 1.8em;
+}
+.social-media-icon{
+  margin-left: calc(var(--len2)*7);
+  transition-duration: 0.2s;
+  height: calc(var(--len2)*20);
+  width: calc(var(--len2)*20);
+  right: 0;
+}
+.social-media-icon:hover{
+  transform: scale(1.8);
+}
+.block{
+  position: relative;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--len2)*5);
+  margin: calc(var(--len2)*10);
+
+}
+.block > text{
+  font-family: 'Nunito', sans-serif;
+  font-size: 3em;
+
+}
+.block > img{
+  width: 30%;
+  margin: calc(var(--len2)*10);
+}
+#blog-type-3{
+  flex-direction: row;
+}
+.x{
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  height: 100px;
+  border: solid black 2px;
+}

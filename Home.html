@@ -1,32 +1,215 @@
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:wght@500&display=swap" rel="stylesheet">        
-        <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="./js/home.js"></script>
-        <link rel="stylesheet" href="./css/home.css">
-        <div class="header">
-            <span id="title">MPOB</span>
-            <div class="option">
-                <span id="opt1">Log in</span>
-                <span id="opt2">Sig up</span>
-                <span id="opt3">Option3</span>
-            </div>
-        </div>
 
-        <div class="opt-drop"></div>
-    </head>
-    <body>
-        <div class="side-bar">
-            <div id="profile-pic"></div>
-            <div id="id-no" class="side-bar-text">12345678</div>
-            <div id="user-name" class="side-bar-text">User Name</div>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./css/home.css">
+    <div class="header">
+        <span id="title">MPOB</span>
+        <div class="option">
+            <a href="./html/login.html" id="opt1">Log in</a>
+            <a id="opt2">Sig up</a>
+            <a id="opt3">Profile</a>
         </div>
-        <div class="tag-box">
-            <div class="search">
-                <input type="search" placeholder="Search" class="search-box">
-                <img src="./resources/icon/icons8_search_50px.png" class="search-icon">
-            </div>
+    </div>
+
+    <div class="opt-drop"></div>
+</head>
+
+<body>
+    <div class="side-bar">
+        <img src="./resources/image/profile.jpg" id="profile-pic">
+        <div id="id-no" class="side-bar-text">12345678</div>
+        <div id="user-name" class="side-bar-text">User Name</div>
+    </div>
+    <div class="tag-box">
+        <div class="search">
+            <input type="search" placeholder="     Search" class="search-box">
+            <img src="./resources/icon/icons8_search_50px.png" class="search-icon">
         </div>
-    </body>
+        <div class="blog-list">
+            <a href=""><div id="blog1" class="blog-in-list">
+                <img src="./resources/image/back1.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/icons8_customer_100px_1.png" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+            <a href=""><div id="blog2" class="blog-in-list">
+                <img src="./resources/image/bf82f6956a32819af48c2572243e8286.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/profile.jpg" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+            <a href=""><div id="blog3" class="blog-in-list">
+                <img src="./resources/image/back1.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/icons8_customer_100px_1.png" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+            <a href=""><div id="blog4" class="blog-in-list">
+                <img src="./resources/image/back1.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/icons8_customer_100px_1.png" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+            <a href=""><div id="blog5" class="blog-in-list">
+                <img src="./resources/image/back1.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/icons8_customer_100px_1.png" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+            <a href=""><div id="blog6" class="blog-in-list">
+                <img src="./resources/image/back1.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/icons8_customer_100px_1.png" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+            <a href=""><div id="blog7" class="blog-in-list">
+                <img src="./resources/image/back1.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/icons8_customer_100px_1.png" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+            <a href=""><div id="blog8" class="blog-in-list">
+                <img src="./resources/image/back1.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/icons8_customer_100px_1.png" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+            <a href=""><div id="blog9" class="blog-in-list">
+                <img src="./resources/image/back1.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/icons8_customer_100px_1.png" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+            <a href=""><div id="blog10" class="blog-in-list">
+                <img src="./resources/image/back1.jpg" id="holder-image">
+                <div class="containts">
+                    <div id="blog-title">
+                        This the heading of the blog
+                    </div>
+                    <div id="blog-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div id="blog-tags">zxcvxv</div>
+                </div>
+                <div class="bloger-data">
+                    <img src="./resources/image/icons8_customer_100px_1.png" id="bloger-pic">
+                    <div id="bloger-id">12345678</div>
+                    <div id="bloger-name">User name</div>
+                </div>
+            </div></a>
+        </div>
+        <div class="page-no-block">
+            <div class="page-no">1</div>
+            <div class="page-no">2</div>
+            <div class="page-no">3</div>
+            <div class="page-no">4</div>
+            <div class="page-no">5</div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./js/home.js"></script>
+
 </html>

@@ -66,10 +66,17 @@ body{
   width: 90%;
   margin-left: 8%;
   font-size: 2em;
+  border: none;
+
+  outline: none;
+}
+.login-input:focus{
+  border-bottom: solid black 1px;
 }
 #login-submit{
   height: calc(var(--len2)*20);
   width: 15%;
+  background-color: white;
   align-self: center;
   margin: calc(var(--len2)*10);
   border:solid var(--shadow-gray) 2px;

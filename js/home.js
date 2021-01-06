@@ -1,19 +1,21 @@
 $(document).ready(function() {
-
-
+  start();
 });
-setTimeout(alert("asdfbasd"), 3000);
-function start(){
-  $(".side-bar").css("filter","blur(10px)");
-  $(".tag-box").css("filter","blur(10px)");
-  $(".option").css("filter","blur(10px)");
+document.getElementById('title').addEventListener("webkitAnimationEnd", end);//activate after animation complete
+function start(){//blur on loading page
+  $(".side-bar").css("filter","blur(15px)");
+  $(".tag-box").css("filter","blur(15px)");
+  $(".option").css("filter","blur(15px)");
 }
-function end(){
+function end(){//un blur after animatin complete
   $(".side-bar").css("filter","blur(0px)");
   $(".tag-box").css("filter","blur(0px)");
   $(".option").css("filter","blur(0px)");
 }
 $(".search-icon").click(function() {
     $(".search-box").css({"animation-play-state": "running"});
-    //$(".search-box").delay(5000).css("animation-play-state", "paused");
+});
+$(".page-no").click(function(e){
+    console.log(e.target.innerText);
+    
 });

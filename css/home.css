@@ -39,9 +39,9 @@
 @keyframes aniTitle {
   from{
     position: fixed;
-    top: 40%;
-    left :40%;
-    font-size: 12em;
+    top: 25%;
+    left :35%;
+    font-size: 15em;
   }
   to{
     position: fixed;
@@ -51,26 +51,27 @@
   }
 }
 .header{
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
+    background-color: white;
     top: 0;
     height: 10%;
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
     border-bottom:solid var(--len2) ;
-
+    z-index: 2;
 }
 #title{
     font-family: 'Bungee Shade', cursive;
     font-size: 4em;
     animation: aniTitle;
     animation-duration: 3s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     z-index: 2;
     cursor: pointer;
-    transition-duration: 2s;
+    transition-duration: 3s;
 }
 .option{
     font-family: 'Montserrat', sans-serif;
@@ -110,7 +111,7 @@ body{
 }
 .side-bar{
     position: absolute;
-    top: 12%;
+    top: 15%;
     border: olid black 1px;
     height: calc(var(--len2)*500);
     left: 1%;
@@ -121,8 +122,8 @@ body{
 }
 #profile-pic{
     top:3%;
-    height: calc(var(--len2)*70);
-    width: calc(var(--len2)*70);
+    height: calc(var(--len2)*50);
+    width: calc(var(--len2)*50);
     border: solid black 1px;
     border-radius: 20%;
     margin-top: calc(var(--len2)*5);
@@ -137,7 +138,6 @@ body{
     font-size: calc(var(--len2)*7);
 }
 .tag-box{
-
     position: absolute;
     top:12%;
     left: 15%;
@@ -182,7 +182,8 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
     border: hidden 1px;
     width: 100%;
     height: auto;
@@ -193,13 +194,12 @@ a{
 }
 .blog-in-list{
     position: relative;
-
     display: flex;
     flex-direction: row;
-    height: calc(var(--len2)*100);
-    width: 90%;
+    height: auto;
+    width: 95%;
     margin: 10px;
-
+    align-self: center;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -240,7 +240,7 @@ a{
     text-align: left;
     padding: calc(var(--len2)*5);
     font-size: 1.2em;
-
+    text-overflow: ellipsis;
     height: 30%;
 }
 #blog-tags{
@@ -285,6 +285,7 @@ a{
     position:relative;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 .page-no{
   border: solid black 1px;
@@ -296,4 +297,13 @@ a{
   margin-top: calc(var(--len2)*15);
   margin: 10px;
   font-size: 1.3em;
+  cursor: pointer;
+}
+.page-no:hover{
+    transform: scale(1.5);
+}
+#empty-block{
+    position: relative;
+    height: calc(var(--len2)*50);
+    width: 100%;
 }

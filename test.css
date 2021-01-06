@@ -1,0 +1,16 @@
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+#x{
+    height: 10000px;
+}
+.cen{
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    border: solid black 2px;
+}
